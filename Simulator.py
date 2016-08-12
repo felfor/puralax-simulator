@@ -57,5 +57,4 @@ def nextStep(board, i, currentPath):
 
 def simulate(board):
     for i in board.availableCells:
-        print("-------------")
         nextStep(board, i, "")
