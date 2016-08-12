@@ -11,7 +11,6 @@ def move(newSource, newTarget, move):
 def paint(sourceCell, targetCell):
     if targetCell is not None and targetCell.color != "#" and targetCell.color != "0" and targetCell.color != sourceCell.color:
         if sourceCell.previousColor is None or sourceCell.previousColor == targetCell.color:
-            print(sourceCell.color+ "--->"+targetCell.color)
             targetCell.previousColor = targetCell.color
             targetCell.color = sourceCell.color
             paint(targetCell, targetCell.up)
